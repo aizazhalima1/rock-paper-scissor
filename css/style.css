@@ -1,0 +1,89 @@
+html{
+    background-color: #e1bebe;
+    text-align: center;
+}
+
+
+
+
+*{box-sizing: border-box}
+
+h1,h2{
+    font-family: "Black Ops One", system-ui;
+    color: #000080;
+    margin-top: 20px;
+}
+.start{
+  font-size: 22px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color:green;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.playbut{
+  cursor: pointer;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.divButton{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#rock{
+    background-color: #f44336;
+}
+#paper{
+    background-color: #008CBA;
+}
+#scissor{
+    background-color: orange;
+}
+  h3,h4{
+    font-family: "Noto Sans Mono", monospace
+  }
+
+
+.first{
+    height: 30%;
+    width: 100%;
+}
+
+.second{
+    height:40%;
+    width:100%;
+    display: flex;
+
+}
+.divsec{
+    width: 50%;
+    height: 100%;
+}
+
+.third{
+    height:30%;
+    width:100%;
+}
+
+
+.started{
+    background-color: lightgreen;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    
+}
