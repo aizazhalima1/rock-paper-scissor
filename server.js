@@ -23,7 +23,7 @@ const server = http.createServer((req, res) => {
       res.end(data);
     });
   } else if (page === '/api') {
-    // API logic
+    res.setHeader('Access-Control-Allow-Origin', '*')
     res.writeHead(200, { 'Content-Type': 'application/json' });
     const arr = ['Rock', 'Paper', 'Scissor'];
     const rand = Math.floor(Math.random() * arr.length);
