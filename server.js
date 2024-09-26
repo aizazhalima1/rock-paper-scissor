@@ -20,12 +20,15 @@ const server = http.createServer((req, res) => {
       res.end(data);
     });
   } else if (page === '/api') {
+    console.log('API requested'); // Log to see if the request reaches here
+    res.setHeader('Access-Control-Allow-Origin', '*'); // Add CORS header
     res.writeHead(200, { 'Content-Type': 'application/json' });
     const arr = ['Rock', 'Paper', 'Scissor'];
     const rand = Math.floor(Math.random() * arr.length);
     const valComputer = arr[rand];
     const objToJson = { computerVal: valComputer };
     res.end(JSON.stringify(objToJson));
+}
   } else if (page === '/css/style.css') {
     fs.readFile('css/style.css', (err, data) => {
       if (err) {
